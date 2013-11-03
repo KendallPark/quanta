@@ -8,6 +8,15 @@ Bundler.require(:default, Rails.env)
 
 module Quanta
   class Application < Rails::Application
+
+    config.assets.enabled = true
+
+    config.encoding = "utf-8"
+
+    config.filter_parameters += [:password]
+
+    config.active_support.escape_html_entities_in_json = true
+    
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

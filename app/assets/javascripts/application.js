@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require angular.min
+//= require angular-ui-states.min
+//= require angularjs/rails/resource
+//= require bootstrap
+//= require modules
+//= require_tree ./config
+//= require routes
 //= require_tree .
